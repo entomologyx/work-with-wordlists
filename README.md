@@ -1,5 +1,5 @@
 # work-with-wordlists
-some python scripts to merge and create wordlists  
+some python3 scripts to merge and create wordlists  
 wordlists are always in the format that each word is separated by a new line    
 
 todo:  
