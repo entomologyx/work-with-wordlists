@@ -6,6 +6,7 @@ If you want to merge 2 or more wordlists into one without duplicates, there are 
 
 todo:  
 - make scripts run faster for big wordlists
+- make scripts not crash computer for large files
 
 
 usage:  
