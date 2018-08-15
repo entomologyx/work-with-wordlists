@@ -1,10 +1,12 @@
 # work-with-wordlists
-some python3 scripts to merge and create wordlists  
-wordlists are always in the format that each word is separated by a new line    
+some python3 scripts to create wordlists  
+wordlists are always in the format that each word is separated by a new line   
+These scripts operate mostly on RAM so if you want to create a wordlist for a very long password with a big charset, go search somewhere else because your computer will get crashed.  
+If you want to merge 2 or more wordlists into one without duplicates, there are already amazing tools like dymerge etc
 
 todo:  
 - make scripts run faster for big wordlists
-- create wordlist merger
+
 
 usage:  
 these scripts don't accept parameters from console, you have to edit the .py file according to your needs  
@@ -32,5 +34,3 @@ e.G.: charset = ['a', 'b', 'c']; pwlen = 2 -> a b c aa ab ac ba bb bc ca cb cc
 wltocharset.py:  
 takes a wordlist(needs to be named wordlist.txt) and gives out a ready to use charset list to the console which you can use in the other provided scripts that work with charsets
 
-wlmerger.py:
-takes two of your wordlists(they need to be sorted lexicographically(you can call something like sort -k2 wordlist.txt from terminal on linux)) and merges them while terminating duplicates
