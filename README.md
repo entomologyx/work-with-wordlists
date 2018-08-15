@@ -4,6 +4,7 @@ wordlists are always in the format that each word is separated by a new line
 
 todo:  
 - make scripts run faster for big wordlists
+- create wordlist merger
 
 usage:  
 these scripts don't accept parameters from console, you have to edit the .py file according to your needs  
@@ -22,10 +23,11 @@ e.G.: charset = ['a', 'b', 'c' ]; pwlen = 3 -> a b c ab ac bc abc
 
 flallcofcharswl.py:  
 creates a wordlist containing all combinations of a charset(default=all lower and upercase letters + numbers 0-9) of a fixed length(pwlen)  
-e.G.: charset = ['a', 'b', 'c' ]; pwlen = 3 -> aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac
-cba cbb cbc cca ccb ccc
+e.G.: charset = ['a', 'b', 'c' ]; pwlen = 3 -> aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab cac cba cbb cbc cca ccb ccc
 
-
+allcofcharswl.py:  
+creates a wordlist containing all combinations of a charset(default=all lower and upercase letters + numbers 0-9) up until a fixed length(pwlen)  
+e.G.: charset = ['a', 'b', 'c']; pwlen = 2 -> a b c aa ab ac ba bb bc ca cb cc
 
 wltocharset.py:  
 takes a wordlist(needs to be named wordlist.txt) and gives out a ready to use charset list to the console which you can use in the other provided scripts that work with charsets
