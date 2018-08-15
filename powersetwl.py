@@ -10,7 +10,6 @@ def main():
     pwlen = 3
     combinations = list(itertools.combinations(charset, pwlen)) #create all possible tuples of specific length 
     file = open("wordlist.txt", "w")
-    print(combinations)
     for i in combinations:
         file.write(''.join(i)+"\n") #merges and writes them to wordlist.txt
     file.close()
