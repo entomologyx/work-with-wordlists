@@ -31,3 +31,6 @@ e.G.: charset = ['a', 'b', 'c']; pwlen = 2 -> a b c aa ab ac ba bb bc ca cb cc
 
 wltocharset.py:  
 takes a wordlist(needs to be named wordlist.txt) and gives out a ready to use charset list to the console which you can use in the other provided scripts that work with charsets
+
+wlmerger.py:
+takes two of your wordlists(they need to be sorted lexicographically(you can call something like sort -k2 wordlist.txt from terminal on linux)) and merges them while terminating duplicates
